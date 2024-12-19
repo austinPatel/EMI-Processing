@@ -38,7 +38,7 @@ class LoanDetailsController extends Controller
         }
         // $emiDetails = $this->loanDetailsService->getEmiDetails();
         // dd($emiDetails);
-        return view('emi_process.process_data', $emiDetails);
+        return view('emi_process.process_data', $emiDetails??array());
 
     }
 
